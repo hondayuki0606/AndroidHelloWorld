@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">AndroidHelloWorld</string>
     <string name="good_moning_text">Good moning!</string>
+    <string name="good_afternoon_text">Good afternoon!</string>
+    <string name="good_evening_text">Good evening!</string>
+    <string name="moning_text">Moning!</string>
+    <string name="afternoon_text">Afternoon!</string>
+    <string name="evening_text">Evening!</string>
 </resources>
