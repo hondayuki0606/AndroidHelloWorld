@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidHelloWorld</string>
+    <string name="good_moning_text">Good moning!</string>
+</resources>
