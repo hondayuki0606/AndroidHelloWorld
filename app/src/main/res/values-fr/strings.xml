@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidHelloWorld</string>
+    <string name="good_moning_text">おはようございます!</string>
+    <string name="good_afternoon_text">こんにちは!</string>
+    <string name="good_evening_text">こんばんわ!</string>
+    <string name="moning_text">朝</string>
+    <string name="afternoon_text">昼</string>
+    <string name="evening_text">晩</string>
+</resources>
