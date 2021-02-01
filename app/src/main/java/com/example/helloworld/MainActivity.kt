@@ -15,7 +15,12 @@ class MainActivity : AppCompatActivity() {
         findViewById<View>(R.id.morningBtn).setOnClickListener {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
-
+//      null安全
+//            val a: String? = null
+//            a.toUpperCase() エラー
+//      以下の場合、関数は実行されずnullが戻り値となります
+//            val a: String? = null
+//            a?.toUpperCase()
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
