@@ -14,19 +14,19 @@ class MainActivity : AppCompatActivity() {
         // クリック時の処理
         findViewById<View>(R.id.morningBtn).setOnClickListener {
             val messageView = findViewById<TextView>(R.id.greetingText)
-            messageView.text = getString(R.string.good_morning_text);
+            messageView.text = getString(R.string.good_morning_text)
 
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
             val messageView = findViewById<TextView>(R.id.greetingText)
-            messageView.text = getString(R.string.good_afternoon_text);
+            messageView.text = getString(R.string.good_afternoon_text)
         }
 
         // クリック時の処理
         findViewById<View>(R.id.eveningBtn).setOnClickListener {
             val messageView = findViewById<TextView>(R.id.greetingText)
-            messageView.text = getString(R.string.good_evening_text);
+            messageView.text = getString(R.string.good_evening_text)
         }
     }
 }
