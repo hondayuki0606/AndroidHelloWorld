@@ -4,6 +4,7 @@ import android.util.Log
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.view.menu.ShowableListMenu
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,12 +16,17 @@ class MainActivity : AppCompatActivity() {
         findViewById<View>(R.id.morningBtn).setOnClickListener {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
-//      null安全
-//            val a: String? = null
-//            a.toUpperCase() エラー
-//      以下の場合、関数は実行されずnullが戻り値となります
-//            val a: String? = null
-//            a?.toUpperCase()
+            val s: Short = 10
+            val i: Int
+            i = s.toInt()
+            val ints: List<Int> = listOf<Int>(1,3,5)
+            print(ints)
+            print(ints[0])
+            print(ints.get(1))
+            print(ints.size)
+            // 実行結果
+            // [1,3,5]133
+
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
