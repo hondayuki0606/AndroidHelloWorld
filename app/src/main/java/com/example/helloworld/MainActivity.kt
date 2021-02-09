@@ -19,13 +19,15 @@ class MainActivity : AppCompatActivity() {
             val s: Short = 10
             val i: Int
             i = s.toInt()
-            val ints: List<Int> = listOf<Int>(1,3,5)
-            print(ints)
-            print(ints[0])
-            print(ints.get(1))
-            print(ints.size)
+            val mints: MutableList<Int> = mutableListOf(1,3,5)
+            mints[0]=0
+            print(mints[0])
+            mints.add(7)
+            print(mints)
+            mints.remove(3)
+            mints.removeAt(1)
             // 実行結果
-            // [1,3,5]133
+            // 0[0,7]
 
         }
         // クリック時の処理
