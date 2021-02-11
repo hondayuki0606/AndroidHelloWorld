@@ -17,9 +17,13 @@ class MainActivity : AppCompatActivity() {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
 
-            val chars: Set<Char> = setOf('A','B','C','C')
+            val strs: MutableSet<String> = mutableSetOf("ABC","BCD","CDE")
+            strs.add("CDE")
             // 実行結果
-            // [A,B,C]
+            // false
+            print(strs)
+            // 実行結果
+            // [ABC,BCD,CDE]
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
