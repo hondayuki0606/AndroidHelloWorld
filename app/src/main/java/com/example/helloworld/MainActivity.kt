@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
             print(strs)
             // 実行結果
             // [ABC,BCD,CDE]
+            strs.add("DEF")
+            strs.remove("BCD")
+            // 実行結果
+            // [ABC,CDE,DEF]
+
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
