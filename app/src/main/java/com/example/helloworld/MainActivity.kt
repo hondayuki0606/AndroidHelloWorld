@@ -16,17 +16,14 @@ class MainActivity : AppCompatActivity() {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
 
-            val fruies: Map<String, Int> = mapOf("apple" to 100, "orange" to 80, "banana" to 60)
-            print(fruies["apple"])
-            // 実行結果
-            // 100
-            print(fruies["orange"])
-            // 実行結果
-            // 80
-            val mfruies: MutableMap<String, Int> = mutableMapOf("apple" to 100, "orange" to 80, "banana" to 60)
-            mfruies.put("pear", 150)
-            mfruies.remove("orange")
-            d("Print", "mfruies=$mfruies")
+            if(4 in 1..5){
+                d("4 in 1..5", "true")
+            } else {
+                d("4 in 1..5", "false=")
+            }
+            val range: IntRange = 2..5
+            range.toList()
+            d("Print", "mfruies=$range.toList()")
             // 実行結果
             // D/Print: mfruies={apple=100, banana=60, pear=150}
 
