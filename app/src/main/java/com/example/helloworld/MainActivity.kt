@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             range.toList()
             d("Print", "mfruies=$range.toList()")
             // 実行結果
-            // D/Print: mfruies={apple=100, banana=60, pear=150}
+            // [2,3,4,5]
 
         }
         // クリック時の処理
