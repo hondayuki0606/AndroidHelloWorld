@@ -16,17 +16,27 @@ class MainActivity : AppCompatActivity() {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
 
-            if(4 in 1..5){
-                d("4 in 1..5", "true")
+            val score = 65
+            if (score >= 60) {
+                d("tag", "Pass")
             } else {
-                d("4 in 1..5", "false=")
+                d("tag", "Fail")
             }
-            val range: IntRange = 2..5
-            range.toList()
-            d("Print", "mfruies=$range.toList()")
             // 実行結果
-            // [2,3,4,5]
+            // Pass
 
+            val decision = if (score >= 90) {
+                "S"
+            } else if (score >= 80) {
+                "A"
+            } else if (score >= 70) {
+                "B"
+            } else if (score >= 60) {
+               "C"
+            } else {
+                "D"
+            }
+            d("tag", "decision=$decision")
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
