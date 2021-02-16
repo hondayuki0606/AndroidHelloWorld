@@ -16,25 +16,13 @@ class MainActivity : AppCompatActivity() {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
 
-            val score = 65
-            if (score >= 60) {
-                d("tag", "Pass")
-            } else {
-                d("tag", "Fail")
-            }
-            // 実行結果
-            // Pass
-
-            val decision = if (score >= 90) {
-                "S"
-            } else if (score >= 80) {
-                "A"
-            } else if (score >= 70) {
-                "B"
-            } else if (score >= 60) {
-               "C"
-            } else {
-                "D"
+            val score = 98
+            val decision = when (score) {
+                in 90..100 -> "S"
+                in 80..89 -> "A"
+                in 70..79 -> "B"
+                in 60..69 -> "C"
+                else -> "D"
             }
             d("tag", "decision=$decision")
         }
