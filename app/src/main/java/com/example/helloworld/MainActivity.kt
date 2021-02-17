@@ -16,15 +16,14 @@ class MainActivity : AppCompatActivity() {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
 
-            val score = 98
-            val decision = when (score) {
-                in 90..100 -> "S"
-                in 80..89 -> "A"
-                in 70..79 -> "B"
-                in 60..69 -> "C"
-                else -> "D"
+            for(i in arrayOf(1,2,3,4,5)) {
+                d("tag", "i=$i")
             }
-            d("tag", "decision=$decision")
+
+            val fruits = listOf("apple","banana","melon","orange","pear")
+            for(fruit in fruits) {
+                d("tag", "fruit=$fruit")
+            }
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
