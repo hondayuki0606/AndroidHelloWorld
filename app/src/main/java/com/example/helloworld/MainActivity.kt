@@ -1,5 +1,6 @@
 package com.example.helloworld
 import android.os.Bundle
+import android.util.Log
 import android.util.Log.d
 import android.view.View
 import android.widget.TextView
@@ -16,14 +17,20 @@ class MainActivity : AppCompatActivity() {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
 
-            for(i in arrayOf(1,2,3,4,5)) {
-                d("tag", "i=$i")
-            }
+            for (i in 2..8) {
+                Log.d("i in 2..8","i=$i")
 
-            val fruits = listOf("apple","banana","melon","orange","pear")
-            for(fruit in fruits) {
-                d("tag", "fruit=$fruit")
             }
+            var s = 1
+            while (s < 5) {
+                Log.d("while (s < 5)","s=$s")
+                s++
+            }
+            var j = 5
+            do {
+                Log.d("while (j > 1)","j=$j")
+                j--
+            } while (j > 1)
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
