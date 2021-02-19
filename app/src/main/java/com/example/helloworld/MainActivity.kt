@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
+    fun square(x:Int):Int {
+        return x * x
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -17,20 +20,8 @@ class MainActivity : AppCompatActivity() {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
 
-            for (i in 2..8) {
-                Log.d("i in 2..8","i=$i")
-
-            }
-            var s = 1
-            while (s < 5) {
-                Log.d("while (s < 5)","s=$s")
-                s++
-            }
-            var j = 5
-            do {
-                Log.d("while (j > 1)","j=$j")
-                j--
-            } while (j > 1)
+            val i = square(3)
+            Log.d("i in 2..8","i=$i")
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
