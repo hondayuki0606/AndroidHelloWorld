@@ -11,6 +11,14 @@ class MainActivity : AppCompatActivity() {
     fun square(x:Int):Int {
         return x * x
     }
+    fun hello(name: String?): Unit {
+        if (name != null) {
+            Log.d("if","Hello $name!")
+        }
+        else {
+            Log.d("else", "Hi there")
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
