@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
             messageView.text = getString(R.string.good_morning_text)
 
             val i = square(3)
+//            val s = fun square(x:Int):Int = x * x
+            Log.d("i in 2..8","i=$i")
             Log.d("i in 2..8","i=$i")
         }
         // クリック時の処理
