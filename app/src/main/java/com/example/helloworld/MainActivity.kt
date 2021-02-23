@@ -28,10 +28,8 @@ class MainActivity : AppCompatActivity() {
             val messageView = findViewById<TextView>(R.id.greetingText)
             messageView.text = getString(R.string.good_morning_text)
 
-            val i = square(3)
-//            val s = fun square(x:Int):Int = x * x
-            Log.d("i in 2..8","i=$i")
-            Log.d("i in 2..8","i=$i")
+            val plus = {x: Int, y: Int -> x + y}
+            Log.d("Tag","plus=" + plus(8,4))
         }
         // クリック時の処理
         findViewById<View>(R.id.afternoonBtn).setOnClickListener {
